@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cdf14b25-f658-4ec7-9b25-6852f5bfcc8b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../CODEWWEB-BASIC" beforeDir="false" afterPath="$PROJECT_DIR$/../CODEWWEB-BASIC" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DICEE-website" beforeDir="false" afterPath="$PROJECT_DIR$/../DICEE-website" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA-" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA-" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JQUERY" beforeDir="false" afterPath="$PROJECT_DIR$/../JQUERY" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Projects-Python" beforeDir="false" afterPath="$PROJECT_DIR$/../Projects-Python" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../detector de rostros Python" beforeDir="false" afterPath="$PROJECT_DIR$/../detector de rostros Python" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2g6dmoCsHYjlOEcH7erDLsu6hFg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eduar/OneDrive/Eduardo Almachi/workspace/aplicacionesdistribuidas&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdf14b25-f658-4ec7-9b25-6852f5bfcc8b" name="Changes" comment="" />
+      <created>1715022122899</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715022122899</updated>
+      <workItem from="1715022123872" duration="107000" />
+      <workItem from="1715022256908" duration="11000" />
+      <workItem from="1715022277378" duration="32000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
