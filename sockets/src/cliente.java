@@ -4,7 +4,7 @@ import java.net.InetAddress;
 import java.net.SocketException;
 
 public class cliente {
-    public static void main(String[] args) throws SocketException {
+    public static void main(String[] args) {
         int puerto = 5000;
         try {
             //crear un objeto socket
@@ -30,7 +30,7 @@ public class cliente {
             socket.receive(paqueteEntrada);
 
             //extraer la infomracion del paquete
-            String mensajeRecibido = new String(paqueteEntrada.getData());
+            String mensajeRecibido = new String(paqueteEntrada.getData(), 0, paqueteEntrada.getLength());
             System.out.println("Mensaje recibido: => " + mensajeRecibido);
         } catch (Exception e) {
             //catch block
