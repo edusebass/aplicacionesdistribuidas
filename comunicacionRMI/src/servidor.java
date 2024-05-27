@@ -8,7 +8,11 @@ public class servidor {
 
             interfaz objetoRemoto = new ImplementacionInterfaz();
             Registry registro = LocateRegistry.createRegistry(1099);
-            registro.rebind("Cliente remoto", objetoRemoto);
+            registro.rebind("Clienteremoto", objetoRemoto);
+
+            System.out.println(
+                    "servicor iniciado"
+            );
         }catch (RemoteException e){
             e.printStackTrace();
 

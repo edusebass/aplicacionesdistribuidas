@@ -8,7 +8,7 @@ public class cliente {
 
         try{
             Registry registro = LocateRegistry.getRegistry("localhost", 1099);
-            interfaz objetoRemoto = (interfaz) registro.lookup("Cliente");
+            interfaz objetoRemoto = (interfaz) registro.lookup("Clienteremoto");
 
             String mensaje = objetoRemoto.mensaje();
             System.out.println(mensaje);
