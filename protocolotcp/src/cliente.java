@@ -10,7 +10,7 @@ public class cliente {
         Scanner  scanner = new Scanner(System.in);
         int port = 5000;
         try {
-            Socket socket_client = new Socket("25.62.115.218", port);
+            Socket socket_client = new Socket("localhost", port);
             System.out.println("cliente conectado");
 
             BufferedReader entrada = new BufferedReader(new InputStreamReader(socket_client.getInputStream()));
