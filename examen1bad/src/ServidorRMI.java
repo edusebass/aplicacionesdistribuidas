@@ -1,21 +1,22 @@
-import java.rmi.Naming;
+import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
 
 public class ServidorRMI {
     public static void main(String[] args) {
         try {
-            // Crear e iniciar el registro RMI
-            LocateRegistry.createRegistry(1099);
-
-            // Crear la instancia del objeto remoto
+            // Crear una instancia de la implementación de la interfaz
             ConversorRemotoImpl conversor = new ConversorRemotoImpl();
 
-            // Registrar el objeto remoto en el registro RMI
-            Naming.rebind("localhost", conversor);
+            // Crear registro RMI en un puerto
+            Registry registro = LocateRegistry.createRegistry(1099);
+
+            // Vinculación con un nombre
+            registro.rebind("ConversorRemoto", conversor);
 
             System.out.println("Servidor RMI listo.");
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e);
         }
     }
 }
