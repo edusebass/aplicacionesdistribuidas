@@ -6,7 +6,7 @@ public class ClienteRMI {
     public static void main(String[] args) {
         try {
             // Obtener el registro
-            Registry registro = LocateRegistry.getRegistry("25.62.115.218", 1099);
+            Registry registro = LocateRegistry.getRegistry("localhost", 1099);
             // Buscar el objeto remoto en el registro RMI
             ConversorRemoto conversor = (ConversorRemoto) registro.lookup("ConversorRemoto");
 
