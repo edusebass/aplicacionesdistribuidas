@@ -1,0 +1,34 @@
+version: '3'
+
+#Base de datos
+services:
+    MAESTRO_A:
+        image: mysql:5.7
+        container_name: MAESTRO_A
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE_NAME: master_master
+        ports:
+            - "3308:3306"
+        command:
+            --server-id=1 --log-bin=mysql-bin --log_error=mysql-bin.err --binlog-do-db=master_master
+    
+    MAESTRO_B:
+        image: mysql:5.7
+        container_name: MAESTRO_B
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE_NAME: master_master
+        ports:
+            - "3309:3306"
+        command:
+            --server-id=2 --log-bin=mysql-bin --log_error=mysql-bin.err --binlog-do-db=master_master
+            
+    PHP_My_Admin:
+        image: phpmyadmin
+        container_name: php_admin
+        ports:
+            - "8082:80"
+        environment:
+            PMA_HOSTS: "MAESTRO_A, MAESTRO_B"
+            PMA_ARBITRARY: 1
