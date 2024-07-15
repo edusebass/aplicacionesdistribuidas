@@ -1,0 +1,50 @@
+version: '3'
+services:
+  nginx:
+    build: 
+      context: ./Nginx
+      dockerfile: Dockerfile
+    container_name: nginx
+    ports:
+      - 8084:80
+
+  servidor1:
+    build: 
+      context: ./servidor1
+      dockerfile: Dockerfile
+    container_name: server1
+    ports:
+      - 5001:5000
+
+  servidor2:
+    build: 
+      context: ./servidor2
+      dockerfile: Dockerfile
+    container_name: server2
+    ports:
+      - 5002:5000
+
+  servidor3:
+    build: 
+      context: ./servidor3
+      dockerfile: Dockerfile
+    container_name: server3
+    ports:
+      - 5003:5000
+
+  servidor4:
+    build: 
+      context: ./servidor4
+      dockerfile: Dockerfile
+    container_name: server4
+    ports:
+      - 5004:5000
+
+  locust:
+    image: locustio/locust:latest
+    container_name: locust
+    ports:
+      - "8089:8089"
+    volumes:
+      - ./:/mnt/locust
+    command: -f /mnt/locust/locustfile.py
