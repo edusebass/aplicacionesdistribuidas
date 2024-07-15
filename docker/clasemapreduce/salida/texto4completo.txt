@@ -1,0 +1,5 @@
+"tal"	3
+"hola"	3
+"estas"	3
+"como"	3
+"que"	3
